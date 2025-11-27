@@ -106,7 +106,7 @@
                           <% } %>
 
                             <div class="actions">
-                              <!-- Tamanhos removido conforme solicitado -->
+                           
 
                               <% if (p.arquivado) { %>
                                 <button type="button" class="btn-restaurar" data-id="<%= p.id %>">
@@ -117,7 +117,8 @@
                                     <i class="fa-solid fa-box-archive"></i> Arquivar
                                   </button>
                                   <% } %>
-                                  <button></button>
+                              <button type="button" class="btn-editar" data-id="<%= p.id %>">Editar</button>
+
 
                                     <form action="/menu/delete/<%= p.id %>" method="POST" class="form-excluir">
                                       <button type="submit" class="btn-excluir">Excluir</button>
